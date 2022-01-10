@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import CategoryView, ProductView
+from .viewset import CategoryViewSet, ProductViewSet
 
 urlpatterns = [
-    path('category/', CategoryView.as_view()),
-    path('category/<int:id>/', CategoryView.as_view()),
-    path('product/', ProductView.as_view()),
-    path('product/<int:id>/', ProductView.as_view()),
+    # path('category/', CategoryViewSet.as_view()),
+    # path('category/<int:id>/', CategoryView.as_view()),
+    # path('product/', ProductView.as_view()),
+    # path('product/<int:id>/', ProductView.as_view()),
 ]
